@@ -14,3 +14,5 @@ dictionary, and a set. Perform basic operations
 like adding, removing, and modifying
 elements.
 
+Skills used: Python, Basic Data Structures
+
