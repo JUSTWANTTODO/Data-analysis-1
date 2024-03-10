@@ -1,0 +1,132 @@
+#Function to demonstrate the operations of lists, sets and dictionaries
+#Operations include: adding an element, deleting an element, viewing the data structure, clearing the data structure, accessing an element from the data structure
+
+# Function to demonstrate the operations of lists
+def list_example():
+    list=[]
+    while True:
+        print("1. View the list")
+        print("2. Add an element to the list")
+        print("3. Add an element to the list at a specific position")
+        print("4. Delete an element from the list")
+        print("5. Delete the list")
+        print("6. Exit")
+        choice=input()
+        if choice == '1':  
+            if list == []:
+                print("The list is empty")
+            else:
+                print(list)
+        elif choice == '2':
+            element=input("Enter the element you want to add to the list: ")
+            list.append(element)
+            print(f"The element {element} has been successfully added.","List: ", list)
+        elif choice == '3':
+            index = input("Enter the index of the element you want to put the value in: ")
+            value = input("Enter the value to be inserted: ")
+            list.insert(int(index), value)
+            print("The list has been modified.", "List: ", list)
+        elif choice == '4':
+            element = input("Enter the element you want to delete: ")
+            list.remove(element)
+            print("The element has been deleted.", "List: ", list)
+        elif choice == '5':
+            list.clear()
+            print("The list has been cleared")
+        elif choice == '6':
+            break
+        else:
+            print("Invalid choice")
+
+# Function to demonstrate the operation of sets
+def set_example():
+    my_set=set()
+    while True:
+        print("1. View the set")
+        print("2. Add an element to the set")
+        print("3. Delete an element from the set")
+        print("4. Delete the set")
+        print("5. Exit")
+        choice_set = input()
+        if choice_set == '1':
+            if my_set == set():
+                print("The set is empty")
+            else:
+                print(my_set)
+        elif choice_set == '2':
+            element = input("Enter the element you want to add to the set: ")
+            my_set.add(element)
+            print(f"The element {element} has been successfully added.", "Set: ", my_set)
+        elif choice_set == '3':
+            element = input("Enter the element you want to delete: ")
+            my_set.discard(element)
+            print("The element has been deleted.", "Set: ", my_set)
+        elif choice_set == '4':
+            my_set.clear()
+            print("The set has been cleared.")
+        elif choice_set == '5':
+            break
+        else:
+            print("Invalid choice")
+
+# Function to demonstrate the operation of dictionaries
+def dict_example():
+    my_dict = {}
+    while True:
+        my_dict={}
+        print("1. View the dictionary")
+        print("2. Add an element to the dictionary")
+        print("3. Access the element from the dictionary")
+        print("4. Delete an element from the dictionary")
+        print("5. Delete the dictionary")
+        print("6. Exit")
+        choice_dict = input()
+        if choice_dict == '1':
+            if my_dict == {}:
+                print("The dictionary is empty")
+            else:
+                print(my_dict)
+        elif choice_dict == '2':
+            key = input("Enter the key: ")
+            value = input("Enter the value: ")
+            my_dict[key] = value
+            print(f"The element {key}:{value} has been successfully added.", "Dictionary: ", my_dict)
+        elif choice_dict == '3':
+            key = input("Enter the key you want to access: ")
+            print(f"The value for the key {key} is {my_dict[key]}")
+        elif choice_dict == '4':
+            key = input("Enter the key you want to delete: ")
+            del my_dict[key]
+            print("The element has been deleted.", "Dictionary: ", my_dict)
+        elif choice_dict == '5':
+            my_dict.clear()
+            print("The dictionary has been cleared.")
+        elif choice_dict == '6':
+            break
+        else:
+            print("Invalid choice")
+
+
+# Main function that calls the above functions  
+def main():
+    while True:
+        print("Choose the data structure you want to work with:")
+        print("1. Lists")
+        print("2. Sets")
+        print("3. Dictionaries")
+        chosen=input()
+        if chosen == '1':
+            list_example()
+        elif chosen == '2':
+            set_example()
+        elif chosen == '3':
+            dict_example()
+        else:
+            print("Invalid choice")
+            break
+
+if __name__ == "__main__":
+    main()
+
+#Thank you!
+
