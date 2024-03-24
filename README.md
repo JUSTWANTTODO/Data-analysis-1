@@ -21,7 +21,7 @@ Responsibility: Loaded a CSV file into a Pandas DataFrame and performed operatio
 
 Task 3: Data Visualization with Matplotlib
 Description: This task involves using the matplotlib library to visualize data.
-Responsibility: Created a bar chart and a line chart using Matplotlib to visualize data from a Pandas DataFrame. Customized the charts with labels, titles, and legends, and other similar operations.
+Responsibility: Created a bar chart, scatterplot, histogram and a line chart using Matplotlib to visualize data from a Pandas DataFrame. Customized the charts with labels, maerker, fonts, titles, and legends, and other similar operations.
 
 
 
