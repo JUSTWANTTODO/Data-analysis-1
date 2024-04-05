@@ -23,6 +23,11 @@ Task 3: Data Visualization with Matplotlib
 Description: This task involves using the matplotlib library to visualize data.
 Responsibility: Created a bar chart, scatterplot, histogram and a line chart using Matplotlib to visualize data from a Pandas DataFrame. Customized the charts with labels, maerker, fonts, titles, and legends, and other similar operations.
 
+Task 4: Exploratory Data Analysis (EDA)
+Description: This task involves performing exploratory data analysis on a dataset using python libraries like pandas, matplotlib, seaborn and numpy.
+Responsibilty: Loaded a dataset, used numpy to create a new column from an existing one, did a statistical analysis, utilised date and time to extract information 
+and visualized the data to dervive insights.
+
 
 
 Stay Connected!
