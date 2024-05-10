@@ -36,7 +36,7 @@ Description: This task involves performing exploratory data analysis on a datase
 Responsibilty: Loaded a dataset, used numpy to create a new column from an existing one, did a statistical analysis, utilised date and time to extract information 
 and visualized the data to dervive insights.
 
-Task 5: Data Analysis
+Task 5 & 6: Data Analysis
 
 Description: This task involves analysing and visualizing the given dataset.
 
